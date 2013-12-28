@@ -1,0 +1,16 @@
+<h1>Latest Bookmarks</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @Bookmarks.each do |bookmark| %>
+    <tr>
+      <td> <%= link_to bookmark.title, bookmark_url %></td> 
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
